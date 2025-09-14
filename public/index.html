@@ -1,193 +1,228 @@
 <!DOCTYPE html>
-<html lang="en" scroll="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pabbathi Nithya Prakash | Portfolio</title>
-  <link rel="stylesheet" href="output.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<body class="bg-gradient-to-tr from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white font-sans">
-  <!-- Navbar -->
-  <header class="fixed top-0 left-0 w-full bg-[#1e293b] shadow-md z-50">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-blue-300">Portfolio</h1>
-    <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
-      <i class="fas fa-bars text-xl"></i>
-    </button>
-    <nav id="nav-links" class="hidden md:flex space-x-6 font-semibold">
-      <a href="#home" class="hover:text-blue-300">Home</a>
-      <a href="#about" class="hover:text-blue-300">About</a>
-      <a href="#projects" class="hover:text-blue-300">Projects</a>
-      <a href="#internships" class="hover:text-blue-300">Internships</a>
-      <a href="#certifications" class="hover:text-blue-300">Certifications</a>
-      <a href="#skills" class="hover:text-blue-300">Skills</a>
-      <a href="#contact" class="hover:text-blue-300">Contact</a>
-    </nav>
-  </div>
-  <!-- Mobile Nav Dropdown -->
-  <div id="mobile-menu" class="md:hidden hidden bg-[#1e293b] text-white px-6 pb-4">
-    <a href="#home" class="block py-2 hover:text-blue-300">Home</a>
-    <a href="#about" class="block py-2 hover:text-blue-300">About</a>
-    <a href="#projects" class="block py-2 hover:text-blue-300">Projects</a>
-    <a href="#internships" class="block py-2 hover:text-blue-300">Internships</a>
-    <a href="#certifications" class="block py-2 hover:text-blue-300">Certifications</a>
-    <a href="#skills" class="block py-2 hover:text-blue-300">Skills</a>
-    <a href="#contact" class="block py-2 hover:text-blue-300">Contact</a>
-  </div>
-</header>
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
+<body class="text-white">
+    <!-- Navbar-->
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-</script>
+    <header class="flex justify-between bg-[#191f36] px-32 py-6 sticky top-0 z-10">
+        <a href="#" class="text-2xl font-bold pt-2.5">Portfolio</a>
+        <nav class="flex gap-9 font-bold pt-1.5">
+            <a href="#Home" class="hover: text-white">Home</a>
+            <a href="#About" class="hover: text-white">About</a>
+            <a href="#Services" class="hover: text-white">Services</a>
+            <a href="#Skills" class="hover: text-white">Skills</a>
+            <a href="#Contact" class="hover: text-white">Contact</a>
+        </nav>
+    </header>
 
-  <!-- Home -->
-  <section id="home" class="min-h-screen pt-32 pb-16 px-6 bg-gradient-to-b from-[#0f172a] to-[#1e293b] flex flex-col md:flex-row items-center justify-center gap-10">
-  <div class="md:w-1/2 text-center md:text-left">
-    <h2 class="text-4xl md:text-5xl font-bold">Pabbathi Nithya Prakash</h2>
-    <p class="text-xl mt-2 text-blue-300">Full Stack Developer | Python | Java | SQL</p>
-    <p class="mt-4 text-lg">Motivated Computer Science graduate with hands-on experience in software development. Skilled in Python, Java, and SQL with a strong problem-solving mindset and adaptability to team environments.</p>
-    <div class="flex gap-6 mt-6 text-2xl text-blue-300 justify-center md:justify-start">
-      <a href="https://linkedin.com/in/pabbathinithyaprakash" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/nithyaprakashpabbathi" class="hover:text-white"><i class="fab fa-github"></i></a>
-      <a href="mailto:pabbathinithyaprakash@gmail.com" class="hover:text-white"><i class="fas fa-envelope"></i></a>
-    </div>
-    <a href="https://drive.google.com/file/d/1HGvE6hyTByATVByWbfW42hqudKTfOBsw/view?usp=sharing" class="mt-6 inline-block bg-blue-300 text-black font-bold px-6 py-2 rounded-full shadow hover:bg-blue-400 transition">Download CV</a>
-  </div>
-  <div class="md:w-1/3 px-38" >
-    <img src="Mypic.JPG" alt="Profile" class="w-4xl h-50 rounded-full shadow-lg border-2 border-blue-300">
-  </div>
-</section>
+    <!-- Home -->
+    <section class="bg-[#191f36] flex justify-between px-44 h-[95vh] pt-24" id="Home">
+        <div>
+            <h2 class="text-3xl font-bold">Hi, Myself</h2>
+            <h1 class="text-5xl font-bold my-4">Pabbathi Nithya Prakash</h1>
+            <h2 class="text-3xl font-bold">And I'm a <span class="text-blue-300">Fullstack Developer</span>
+            </h2>
+            <p class="mt-4 pb-7">With a Good Foundation in Java and
+                in SQL,HTML,CSS, and Tailwind CSS. Passionate about building scalable web applications.
+            </p>
+            <div class="flex gap-9 mb-8.5 text-2xl text-blue-300">
+                <a href="https://x.com/NithyaPabbathi">
+                    <i class="fa-brands fa-facebook border-3 border-blue-300 p-2.5 rounded-full hover: text-black hover:bg-blue-300"></i>
+                </a>
+                <a href="https://x.com/NithyaPabbathi">
+                    <i class="fa-brands fa-x-twitter border-2 border-blue-300 p-2.5 rounded-full hover: text-black hover:bg-blue-300"></i>
+                </a>
+                <a href="https://www.instagram.com/nithyaprakash2003/?hl=en">
+                    <i class="fa-brands fa-instagram border-2 border-blue-300 p-2.5 rounded-full hover: text-black hover:bg-blue-300"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pabbathinithyaprakash?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <i class="fa-brands fa-linkedin border-2 border-blue-300 p-2.5 rounded-full hover: text-black hover:bg-blue-300"></i>
+                </a>
+            </div>
+            <a href="https://drive.google.com/file/d/1JN9_JLNV-VJBBHWrywK7ggoxrbZw0hMv/view?usp=drive_link" class="bg-blue-300 py-2 px-4 text-black font-bold rounded-full shadow-2xl shadow-blue-300 hover:shadow-none hover:text-white">Download CV</a>
+        </div>
+        <div class="pt-16 px-8">
+            <img src="PNP passport pic.jpg" alt="NP" class="rounded-full w-[250px] h-[250px] animate-bounce 1s hover:shadow-2xl shadow-blue-300">
+        </div>
+    </section>
+    <!-- About -->
 
-  <!-- About -->
-  <section id="about" class="py-20 bg-[#1e293b] px-6 text-center">
-  <h2 class="text-3xl font-bold mb-6"> About <span class="text-blue-300">Me</span></h2>
-  <p class="max-w-3xl mx-auto text-lg leading-relaxed">
-    I’m a Computer Science graduate with a passion for full stack development. I enjoy building web applications that solve real-world problems. I’m confident in working with Java, Python, and frontend tools like HTML, CSS, and Tailwind. I value clean design and user-friendly interfaces. When asked, I justify my work with clarity, keeping both logic and usability in mind.
-  </p>
-</section>
+    <section class="bg-slate-800 py-60 flex gap-28 px-44 h-[100vh]" id="About">
+        <div class="w-[400px]">
+            <img src="PNP passport pic.jpg" alt="NP" class="w-4xl rounded-4xl border-2 border-amber-50 p-1">
+        </div>
+        <div>
+            <h1 class="text-4xl font-bold">About <span class="text-blue-300">Me</span> </h1>
+            <h3 class="text-3xl font-bold my-3">Fullstack Developer</h3>
+            <p class="mb-5 pb-2 text-xl">Aspiring Full Stack Developer with a strong foundation in Java,SQL,HTML,CSS,and Tailwind CSS, eager to build scalable web applications and enhance user experiences.</p>
+            <a href="#" class="bg-blue-300 py-2 px-4 text-black font-bold rounded-full shadow-2xl shadow-blue-400 hover:shadow-none hover:text-white">ReadMore</a>
+        </div>
+    </section>
+    <!-- My Services -->
 
-  <!-- Projects -->
-  <section id="projects" class="py-20 bg-[#0f172a] px-6 text-center">
-    <h2 class="text-3xl font-bold mb-12">Projects</h2>
-    <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg border-l-4 border-green-400 hover:scale-[1.02] transition duration-300">
-        <h3 class="text-xl font-semibold text-green-300">Library Management System </h3>
-        <p class="mt-2 text-left">A basic console-based project to simulate a small library system using Core Java. Implemented object-oriented concepts and simple logic to manage book data.</p>
-      </div>
-      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg border-l-4 border-blue-400 hover:scale-[1.02] transition duration-300">
-        <h3 class="text-xl font-semibold text-blue-300">Face Morphing Attack Detection</h3>
-        <p class="mt-2 text-left">Developed a system using Deep Learning to identify and prevent face morphing attacks. Utilized CNN architectures, Python, and OpenCV for secure image processing.</p>
-      </div>
-      <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg border-l-4 border-blue-400 hover:scale-[1.02] transition duration-300">
-        <h3 class="text-xl font-semibold text-cyan-300">Personal Portfolio Website</h3>
-        <p class="mt-2 text-left">Created a responsive portfolio website with HTML, Tailwind CSS, and JavaScript to showcase skills, projects, and certifications with clean UI and smooth navigation.</p>
-      </div>
-    </div>
-  </section>
+    <section class="bg-[#191f36] py-22 h-[100vh] px-20" id="Services">
+        <div flex class=" text-center py10 text-4xl">
+            My <span class="text-blue-300">Services</span>
+        </div>
+        <!-- <div>
+            <div class="border-4">
+                <i class="fa-solid fa-code text-blue-400 text-3xl py-2 px-4"></i>
+                <h2 class="text-2xl py-3.5">Web Development</h2>
+                <p class="text-center mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis in illum, neque eos laudantium voluptates!</p>
+                <a href="" class="bg-blue-300 text-black font-bold rounded-full shadow-2xl shadow-blue-300 hover:shadow-none">Read More</a>
+            </div>
+            <div class="flex gap-4">
+                <i class="fa-solid fa-database text-blue-400 text-3xl py-2 px-4"></i>
+                <h2 class="text-2xl py-3.5">Database Development</h2>
+                <p class="text-center mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis in illum, neque eos laudantium voluptates!</p>
+                <a href="" class="bg-blue-300 text-black font-bold rounded-full shadow-2xl shadow-blue-300 hover:shadow-none">Read More</a>
+            </div>
+            <div class="flex gap-4">
+                <i class="fa-brands fa-python text-blue-400 text-3xl py-2 px-4"></i>
+                <h2 class="text-2xl py-3.5">Python Development</h2>
+                <p class="text-center mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis in illum, neque eos laudantium voluptates!</p>
+                <a href="" class="bg-blue-300 text-black font-bold rounded-full shadow-2xl shadow-blue-300 hover:shadow-none">Read More</a>
+            </div>
+        </div> -->
+        <div class="flex gap-8 justify-center px-10 py-20 text-center">
+            <div class="bg-[#3c3c69] p-6 rounded-4xl hover:border-2 hover:border-blue-300 hover:transform hover:scale-110 transition duration-1000">
+                <i class="fa-solid fa-code text-4xl text-blue-300 px-16 flex justify-center"></i>
+                <h2 class="text-2xl font-bold my-2">Web Development</h2>
+                <p class="mb-8">Skilled in building responsive and interactive websites using HTML, CSS,JavaScript and frameworks like Tailwind CSS.</p>
+                <a href="https://en.wikipedia.org/wiki/Web_development" class="bg-blue-300 px-4 py-2 font-bold rounded-full shadow-2xl shadow-blue-300 hover:shadow-none">Read More</a>
+            </div>
+            <div class="bg-[#3c3d69] p-6 rounded-4xl hover:border-2 hover:border-blue-300 hover:transform hover:scale-110 transition duration-1000">
+                <i class="fa-solid fa-database text-4xl text-blue-300 px-16 flex justify-center "></i>
+                <h2 class="text-2xl font-bold pb-3">Database Development</h2>
+                <p class="mb-9">Proficient in writing complex SQL queries, joins, and stored procedures to optimize database performance and data analysis.</p>
+                <a href="https://en.wikipedia.org/wiki/Database" class="bg-blue-300 px-4 py-2 font-bold rounded-full shadow-2xl shadow-blue-300 hover:shadow-none ">Read More</a>
+            </div>
+            <div class="bg-[#403c69] p-6 rounded-4xl hover:border-2 hover:border-blue-300 hover:transform hover:scale-110 transition duration-1000">
+                <i class="fa-brands fa-java text-4xl text-blue-300 px-16 pb-2 flex justify-center"></i>
+                <h2 class="text-2xl font-bold pb-3">Java Development</h2>
+                <p class="mb-8">Proficient in Java programming with experience in object-oriented design, data structures, and algorithms.</p>
+                <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" class="bg-blue-300 px-4 py-2 font-bold rounded-full shadow-2xl shadow-blue-300 hover:shadow-none">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!--Skills -->
 
-  <!-- Internships -->
-<section id="internships" class="py-20 bg-[#0f172a] px-6 text-center">
-  <h2 class="text-3xl font-bold mb-12">Internships</h2>
-  <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-    <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg border-l-4 border-blue-400 hover:scale-105 transition duration-300">
-      <h3 class="text-xl font-semibold text-blue-300">SmartInternz - ML Intern</h3>
-      <p class="text-sm text-gray-300 mt-1">Mar 2024 – May 2024</p>
-      <p class="mt-3 text-left">Built a rainfall prediction model using Python and Machine Learning. Gained experience in end-to-end ML lifecycle and full stack collaboration.</p>
-    </div>
-    <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg border-l-4 border-blue-400 hover:scale-105 transition duration-300">
-      <h3 class="text-xl font-semibold text-blue-300">TechnoHacks - Java Intern</h3>
-      <p class="text-sm text-gray-300 mt-1">Sep 2023 – Nov 2023</p>
-      <p class="mt-3 text-left">Developed a Library Management System using Core Java with OOP principles, File I/O, and Exception Handling.</p>
-    </div>
-    <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg border-l-4 border-blue-400 hover:scale-105 transition duration-300">
-      <h3 class="text-xl font-semibold text-blue-300">BlackBuck-IIDT - AI/ML Intern</h3>
-      <p class="text-sm text-gray-300 mt-1">May 2024 – Jul 2024</p>
-      <p class="mt-3 text-left">Worked on scalable ML solutions using Python, Django, and SQL. Learned Agile development and collaborative coding.</p>
-    </div>
-    <div class="bg-[#1e293b] p-6 rounded-lg shadow-lg border-l-4 border-blue-400 hover:scale-105 transition duration-300">
-      <h3 class="text-xl font-semibold text-blue-300">Indo Euro Synchronization</h3>
-      <p class="text-sm text-gray-300 mt-1">Apr 2023 – Sep 2023</p>
-      <p class="mt-3 text-left">Performed data analysis and automation using Python and Microsoft 365 tools. Improved reporting and dashboard insights.</p>
-    </div>
-  </div>
-</section>
-  <!-- Certifications -->
-<section id="certifications" class="py-20 bg-[#1e293b] px-6 text-center animate-fade-in transition duration-700">
-  <h2 class="text-3xl font-bold mb-12">Certifications</h2>
-  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    <div class="bg-[#0f172a] p-6 rounded-lg shadow-md border border-blue-400 hover:shadow-xl transition">
-      <h3 class="font-semibold text-blue-300 text-lg">Introduction to SQL</h3>
-      <p class="text-sm text-gray-300 mt-1">edX</p>
-    </div>
-    <div class="bg-[#0f172a] p-6 rounded-lg shadow-md border border-blue-400 hover:shadow-xl transition">
-      <h3 class="font-semibold text-blue-300 text-lg">UI/UX Development</h3>
-      <p class="text-sm text-gray-300 mt-1">L&T EduTech</p>
-    </div>
-    <div class="bg-[#0f172a] p-6 rounded-lg shadow-md border border-blue-400 hover:shadow-xl transition">
-      <h3 class="font-semibold text-blue-300 text-lg">Blockchain Basics</h3>
-      <p class="text-sm text-gray-300 mt-1">Coding Ninjas</p>
-    </div>
-    <div class="bg-[#0f172a] p-6 rounded-lg shadow-md border border-blue-400 hover:shadow-xl transition">
-      <h3 class="font-semibold text-blue-300 text-lg">Python Programming</h3>
-      <p class="text-sm text-gray-300 mt-1">Infosys Springboard</p>
-    </div>
-  </div>
-</section>
+    <section class="px-20 bg-slate-800 h-[100vh] py-10" id="Skills">
+        <h2 class="text-center text-3xl font-bold py-16">My <span class="text-blue-300">Skills</span></h2>
+        <div class="grid grid-cols-2 gap-10">
+            <!-- <div>
+                <div class="flex justify-between pb-1">
+                    <span>Python</span>
+                    <span>90%</span>
+                </div>
+                <div class="bg-white rounded-full">
+                    <div class="bg-blue-400 h-3 rounded-full" style="width: 90%"></div>
+                </div>
+            </div> -->
+            <div>
+                <div class="flex justify-between relative">
+                    <h1>Python</h1>
+                    <span class="text-blue-300">90%</span>
+                    <div class="absolute h-3 w-[100%] bg-white mt-7 rounded-full text-white bottom"></div>
+                    <div class="absolute h-3 w-[90%] bg-blue-400 mt-7 rounded-full text-white "></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between pb-1">
+                    <span>HTML</span>
+                    <span class="text-blue-300">95%</span>
+                </div>
+                <div class="bg-white rounded-full">
+                    <div class="bg-blue-400 h-3 rounded-full" style="width: 95%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between pb-1">
+                    <span>Java</span>
+                    <span class="text-blue-300">80%</span>
+                </div>
+                <div class="bg-white rounded-full">
+                    <div class="bg-blue-400 h-3 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between pb-1">
+                    <span>CSS</span>
+                    <span class="text-blue-300">95%</span>
+                </div>
+                <div class="bg-white rounded-full">
+                    <div class="bg-blue-400 h-3 rounded-full" style="width: 95%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between pb-1">
+                    <span>MYSQL</span>
+                    <span class="text-blue-300">90%</span>
+                </div>
+                <div class="bg-white rounded-full">
+                    <div class="bg-blue-400 h-3 rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between pb-1">
+                    <span>JavaScript</span>
+                    <span class="text-blue-300">80%</span>
+                </div>
+                <div class="bg-white rounded-full">
+                    <div class="bg-blue-400 h-3 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between pb-1">
+                    <span>Git&Github</span>
+                    <span class="text-blue-300">85%</span>
+                </div>
+                <div class="bg-white rounded-full">
+                    <div class="bg-blue-400 h-3 rounded-full" style="width: 85%"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-between pb-1">
+                    <span>Tailwind CSS</span>
+                    <span class="text-blue-300">85%</span>
+                </div>
+                <div class="bg-white rounded-full">
+                    <div class="bg-blue-400 h-3 rounded-full" style="width:85%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Skills -->
-  <section id="skills" class="py-20 bg-[#1e293b] px-6 text-center animate-fade-in transition-all duration-700 ease-in-out">
-    <h2 class="text-3xl font-bold mb-12">Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-left">
-      <div><p>Python</p><div class="w-full bg-white rounded-full h-3 mt-1"><div class="h-3 bg-blue-400 rounded-full" style="width: 90%"></div></div></div>
-      <div><p>Java</p><div class="w-full bg-white rounded-full h-3 mt-1"><div class="h-3 bg-blue-400 rounded-full" style="width: 85%"></div></div></div>
-      <div><p>SQL (MySQL)</p><div class="w-full bg-white rounded-full h-3 mt-1"><div class="h-3 bg-blue-400 rounded-full" style="width: 90%"></div></div></div>
-      <div><p>HTML</p><div class="w-full bg-white rounded-full h-3 mt-1"><div class="h-3 bg-blue-400 rounded-full" style="width: 95%"></div></div></div>
-      <div><p>CSS</p><div class="w-full bg-white rounded-full h-3 mt-1"><div class="h-3 bg-blue-400 rounded-full" style="width: 95%"></div></div></div>
-      <div><p>JavaScript</p><div class="w-full bg-white rounded-full h-3 mt-1"><div class="h-3 bg-blue-400 rounded-full" style="width: 80%"></div></div></div>
-      <div><p>Tailwind CSS</p><div class="w-full bg-white rounded-full h-3 mt-1"><div class="h-3 bg-blue-400 rounded-full" style="width: 85%"></div></div></div>
-      <div><p>Git & GitLab</p><div class="w-full bg-white rounded-full h-3 mt-1"><div class="h-3 bg-blue-400 rounded-full" style="width: 85%"></div></div></div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-20 bg-[#0f172a] px-6 text-center">
-    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
-    <form class="max-w-xl mx-auto space-y-4">
-      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-[#1e293b] text-white placeholder:text-gray-400">
-      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-[#1e293b] text-white placeholder:text-gray-400">
-      <input type="text" placeholder="Subject" class="w-full p-3 rounded-lg bg-[#1e293b] text-white placeholder:text-gray-400">
-      <textarea rows="4" placeholder="Message" class="w-full p-3 rounded-lg bg-[#1e293b] text-white placeholder:text-gray-400"></textarea>
-      <button type="submit" class="bg-blue-300 text-black font-semibold px-6 py-2 rounded-full hover:bg-blue-400 transition">Send</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-[#1e293b] py-4 text-center text-sm text-gray-400">
-    © 2025 Pabbathi Nithya Prakash. All rights reserved.
-  </footer>
-
-<!-- Scroll to Top Button -->
-<button id="scrollToTop" class="fixed bottom-6 right-6 bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg hidden transition duration-300">
-  <i class="fas fa-arrow-up"></i>
-</button>
-
-<script>
-  // Show/hide scroll to top button
-  const scrollBtn = document.getElementById("scrollToTop");
-  window.addEventListener("scroll", () => {
-    scrollBtn.classList.toggle("hidden", window.scrollY < 300);
-  });
-
-  // Scroll to top
-  scrollBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
+    <!-- Contact -->
+    <section class="bg-[#191f36] py-10 h-[100vh] px-20" id="Contact">
+        <h2 class="text-center text-3xl font-bold py-16">Contact <span class="text-blue-300">Me</span></h2>
+        <form class="w-[55%] ml-auto mr-auto mt-3 text-center">
+            <div class="flex justify-between text-center">
+                <input type="text" placeholder="Enter Your name" class="w-[49%] bg-slate-700 p-4 rounded-xl outline-0 placeholder:text-gray-500">
+                <input type="email" placeholder="Enter Your e-mail " class="w-[49%] bg-slate-700 p-4 rounded-xl outline-0 placeholder:text-gray-500">
+            </div>
+            <div class="flex justify-between my-5">
+                <input type="number" placeholder="Enter Your Mobile number " class="w-[49%] bg-slate-700 p-4 rounded-xl outline-0 placeholder:text-gray-500">
+                <input type="text" placeholder="Enter e-mail Subject " class="w-[49%] bg-slate-700 p-4 rounded-xl outline-0 placeholder:text-gray-500">
+            </div>
+            <textarea rows="10" cols="40" placeholder="Your Message" class="w-[100%] bg-slate-700 rounded-xl resize-none p-3 mb-6 outline-0 placeholder:text-gray-500">
+            </textarea>
+            <a href="#" class="bg-blue-300 text-black px-4 py-2 font-bold rounded-full shadow-2xl shadow-blue-300 hover:shadow-none">Send Message</a>
+        </form>
+    </section>
+    <footer class="bg-slate-800 p-6 px-20 flex justify-between">
+        <div>
+            <p class="font-bold">Copyright © 2025 by Nithya | All Rights Reserved</p>
+        </div>
+        <div>
+            <a href="#Home"><i class="fa-solid fa-angles-up text-black bg-blue-300 p-2 rounded-full h-10 w-10 text-center"></i></a>
+        </div>
+    </footer>
 </body>
-</html>
+</html> -->
